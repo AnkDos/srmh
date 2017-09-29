@@ -13,3 +13,4 @@ $map->addMarkerByAddress("Golden Temple, Amritsar, Punjab", "Golden Temple, Amri
 $map->printGMapsJS();
 $map->showMap(true);
 ?>
+//key= AIzaSyAYk8WwkBwCZ8nQ13x8AWmHMj6j_xYOSMk
