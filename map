@@ -1,0 +1,15 @@
+
+<?php
+require_once("simpleGMapAPI.php");
+$map = new simpleGMapAPI();
+
+$map->setWidth('500px');
+$map->setHeight('500px');
+ 
+// or assign width and height in percentage
+$map->setWidth('100%');
+$map->setHeight('500px');
+$map->addMarkerByAddress("Golden Temple, Amritsar, Punjab", "Golden Temple, Amritsar", '<a href="google">Golden Temple, Amritsar</a><p>Sri Harmandir Sahib, also known as Sri Darbar Sahib or Golden Temple, (on account of its scenic beauty and golden coating for English speaking world), is named after Hari(God) the temple of God. The Sikhs all over the world, daily wish to pay visit to Sri Amritsar and to pay obeisance alt Sri Harmandir Sahib in their Ardas</p>', "http://demos.thesoftwareguy.in/google-map1/icons/sikh.png");
+$map->printGMapsJS();
+$map->showMap(true);
+?>
